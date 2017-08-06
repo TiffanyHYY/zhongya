@@ -214,7 +214,7 @@ $.fn.jCarouselLite = function(o) {
 
         vertical: false,
         circular: true,
-        visible: 3,
+        // visible: 3,
         start: 0,
         scroll: 1,
 

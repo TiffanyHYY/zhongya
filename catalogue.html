@@ -8,24 +8,9 @@
     <link rel="stylesheet" href="css/grid.css" type="text/css" media="screen">   
     <script src="js/jquery-1.6.2.min.js" type="text/javascript"></script> 
     <script src="js/jquery.easing.1.3.js" type="text/javascript"></script>
-    <script src="js/jcarousellite_1.0.1.js" type="text/javascript"></script>
+    <!-- <script src="js/jcarousellite_1.0.1.js" type="text/javascript"></script> -->
     <script src="js/jquery.galleriffic.js" type="text/javascript"></script>
     <script src="js/jquery.opacityrollover.js" type="text/javascript"></script> 
-    <script type="text/javascript">
-		$(document).ready(function() { 
-			$(".jCarouselLite").jCarouselLite({
-				  btnNext: ".next",
-				  btnPrev: ".prev",		  
-				  speed: 400,		  
-				  vertical: false,
-				  circular: true,
-				  easing:'easeOutQuart',
-				  visible: 4,
-				  start: 0,
-				  scroll: 1
-			 });
-		});
-	</script>    
 	<!--[if lt IE 7]>
         <div style=' clear: both; text-align:center; position: relative;'>
             <a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0"  alt="" /></a>
@@ -35,6 +20,11 @@
    		<script type="text/javascript" src="js/html5.js"></script>
         <link rel="stylesheet" href="css/ie.css" type="text/css" media="screen">
 	<![endif]-->
+    <style type="text/css">
+        .carousel li{
+            display: inline-block;
+        }
+    </style>
 </head>
 <body id="page3">
 	<!--==============================header=================================-->
@@ -66,7 +56,7 @@
                 <div class="bg">
                     <div class="bg-top-shadow">
                         <div class="main">
-                            <div class="gallery p3" id="project2009">
+                            <div class="gallery p3">
                             	<div class="wrapper indent-bot">
                                     <div id="gallery" class="content">
                                        <div class="wrapper">
@@ -99,7 +89,7 @@
                                     </div>
                                 </div>
                                 <div class="inner-2">
-                                    <div class="wrapper">
+                                    <div class="wrapper" id="discript">
                                         <span class="title t2 img-indent3">2009</span>
                                         <div class="extra-wrap indent-top2">
                                         	桂林大正温泉假日酒店，建筑面积近四万平方米，是桂林市内首家五星级温泉酒店，地处桂林市中心地段，毗邻南溪山景区、黑山植物园、联达商业广场，距机场仅40分钟车程，汽车站、火车站近在咫尺，地理环境优越。酒店独有的温泉景区，天然温泉水质晶莹剔透，水温常年保持35℃以上、四级花枝摇曳、绿影婆娑，周边亭台、假山错落有致，予人以世外桃源之感。温泉水滑，褪去周身疲惫；放眼周边，叠翠山水入怀。惬意人生，夫复何求？1万平方米温泉景观区，中医理疗房20间，高级美容SPA房8间，500平方米的温泉游泳池，超大规模的温泉景观、至尊豪华的KTV娱乐城，为桂林的酒店业添加瑰丽的一笔。
@@ -107,97 +97,15 @@
                                     </div>
                                 </div>
                             </div>
-                           <!--  <div class="gallery p3" id="project2010">
-                                <div class="wrapper indent-bot">
-                                    <div id="gallery" class="content">
-                                       <div class="wrapper">
-                                           <div class="slideshow-container">
-                                                <div id="slideshow" class="slideshow"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="thumbs" class="navigation">
-                                        <ul class="thumbs noscript">
-                                            <li>
-                                                <a class="thumb" href="images/gallery-img1.jpg" title=""> <img src="images/thumb-1.jpg" alt="" /><span></span> </a>
-                                            </li> 
-                                            <li>
-                                                <a class="thumb" href="images/gallery-img2.jpg" title=""> <img src="images/thumb-2.jpg" alt="" /> <span></span></a>
-                                            </li> 
-                                            <li>
-                                                <a class="thumb" href="images/gallery-img3.jpg" title=""> <img src="images/thumb-3.jpg" alt="" /> <span></span></a>
-                                            </li> 
-                                            <li>
-                                                <a class="thumb" href="images/gallery-img4.jpg" title=""> <img src="images/thumb-4.jpg" alt="" /> <span></span></a>
-                                            </li> 
-                                            <li>
-                                                <a class="thumb" href="images/gallery-img5.jpg" title=""> <img src="images/thumb-5.jpg" alt="" /> <span></span></a>
-                                            </li> 
-                                            <li>
-                                                <a class="thumb" href="images/gallery-img6.jpg" title=""> <img src="images/thumb-6.jpg" alt="" /> <span></span></a>
-                                            </li>           
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="inner-2">
-                                    <div class="wrapper">
-                                        <span class="title t2 img-indent3">2009</span>
-                                        <div class="extra-wrap indent-top2">
-                                            桂林大正温泉假日酒店，建筑面积近四万平方米，是桂林市内首家五星级温泉酒店，地处桂林市中心地段，毗邻南溪山景区、黑山植物园、联达商业广场，距机场仅40分钟车程，汽车站、火车站近在咫尺，地理环境优越。酒店独有的温泉景区，天然温泉水质晶莹剔透，水温常年保持35℃以上、四级花枝摇曳、绿影婆娑，周边亭台、假山错落有致，予人以世外桃源之感。温泉水滑，褪去周身疲惫；放眼周边，叠翠山水入怀。惬意人生，夫复何求？1万平方米温泉景观区，中医理疗房20间，高级美容SPA房8间，500平方米的温泉游泳池，超大规模的温泉景观、至尊豪华的KTV娱乐城，为桂林的酒店业添加瑰丽的一笔。
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="gallery p3" id="project2015">
-                                <div class="wrapper indent-bot">
-                                    <div id="gallery" class="content">
-                                       <div class="wrapper">
-                                           <div class="slideshow-container">
-                                                <div id="slideshow" class="slideshow"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="thumbs" class="navigation">
-                                        <ul class="thumbs noscript">
-                                            <li>
-                                                <a class="thumb" href="images/gallery-img1.jpg" title=""> <img src="images/thumb-1.jpg" alt="" /><span></span> </a>
-                                            </li> 
-                                            <li>
-                                                <a class="thumb" href="images/gallery-img2.jpg" title=""> <img src="images/thumb-2.jpg" alt="" /> <span></span></a>
-                                            </li> 
-                                            <li>
-                                                <a class="thumb" href="images/gallery-img3.jpg" title=""> <img src="images/thumb-3.jpg" alt="" /> <span></span></a>
-                                            </li> 
-                                            <li>
-                                                <a class="thumb" href="images/gallery-img4.jpg" title=""> <img src="images/thumb-4.jpg" alt="" /> <span></span></a>
-                                            </li> 
-                                            <li>
-                                                <a class="thumb" href="images/gallery-img5.jpg" title=""> <img src="images/thumb-5.jpg" alt="" /> <span></span></a>
-                                            </li> 
-                                            <li>
-                                                <a class="thumb" href="images/gallery-img6.jpg" title=""> <img src="images/thumb-6.jpg" alt="" /> <span></span></a>
-                                            </li>           
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="inner-2">
-                                    <div class="wrapper">
-                                        <span class="title t2 img-indent3">2009</span>
-                                        <div class="extra-wrap indent-top2">
-                                            桂林大正温泉假日酒店，建筑面积近四万平方米，是桂林市内首家五星级温泉酒店，地处桂林市中心地段，毗邻南溪山景区、黑山植物园、联达商业广场，距机场仅40分钟车程，汽车站、火车站近在咫尺，地理环境优越。酒店独有的温泉景区，天然温泉水质晶莹剔透，水温常年保持35℃以上、四级花枝摇曳、绿影婆娑，周边亭台、假山错落有致，予人以世外桃源之感。温泉水滑，褪去周身疲惫；放眼周边，叠翠山水入怀。惬意人生，夫复何求？1万平方米温泉景观区，中医理疗房20间，高级美容SPA房8间，500平方米的温泉游泳池，超大规模的温泉景观、至尊豪华的KTV娱乐城，为桂林的酒店业添加瑰丽的一笔。
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> -->
                             <div class="carousel">
                                 <h3 class="color-1 p2">往期项目</h3>
                                 <a class="prev" href="#">Prev</a>
                                 <a class="next" href="#">Next</a>
-                                <div class="jCarouselLite">
+                                <div class="">
                                     <ul id="carousel">
-                                        <li><a href="javascript:void(0)"><img src="images/page3-img1.jpg" alt="" /><span>2009</span></a></li>
-                                        <li><a href="javascript:void(0)"><img src="images/page3-img2.jpg" alt="" /><span>2010</span></a></li>
-                                        <li><a href="javascript:void(0)"><img src="images/page3-img3.jpg" alt="" /><span>2015</span></a></li>
+                                        <li id="project2009"><a href="javascript:void(0)"><img src="images/page3-img1.jpg" alt="" /><span>2009</span></a></li>
+                                        <li id="project2011"><a href="javascript:void(0)"><img src="images/page3-img2.jpg" alt="" /><span>2011</span></a></li>
+                                        <li id="project2015"><a href="javascript:void(0)"><img src="images/page3-img3.jpg" alt="" /><span>2015</span></a></li>
                                        <!--  <li><a href="#"><img src="images/page3-img4.jpg" alt="" /><span>2008</span></a></li> -->
                                     </ul>
                                 </div>
@@ -232,7 +140,7 @@
                         <article class="grid_4">
                         	<h3 class="prev-indent-bot2">External Links</h3>
                             <ul class="list-2">
-                            	<li id="li2009"><a href="#">Totam rem aperiam eaque ipsa quae abillo</a></li>
+                            	<li><a href="#">Totam rem aperiam eaque ipsa quae abillo</a></li>
                                 <li><a href="#">Inventore veritatis quasi architecto beatae vitae</a></li>
                                 <li><a href="#">Nemo enim ipsam voluptatem quia</a></li>
                                 <li><a href="#">Voluptas sit aspernatur aut odit aut fugit</a></li>
@@ -251,7 +159,7 @@
         <div class="main">
             <div class="container_12">
                 <div class="wrapper">
-                    <div class="grid_12"style="font-size: 20px;text-align: center;">
+                    <div class="grid_12" style="font-size: 20px;text-align: center;">
                         中亚温泉泳池设备有限公司&copy; 2017
                         <!-- {%FOOTER_LINK} -->
                     </div>
@@ -260,61 +168,104 @@
         </div>
     </footer>
     <script type="text/javascript">
-		// 	$(window).load(function() {
-		// 	// We only want these styles applied when javascript is enabled
-		// 	$('div.navigation').css({'width' : '320px', 'float' : 'right'});
-		// 	$('div.content').css('display', 'block');
+		$(window).load(function() {
+			// We only want these styles applied when javascript is enabled
+			$('div.navigation').css({'width' : '320px', 'float' : 'right'});
+			$('div.content').css('display', 'block');
 	
-		// 	// Initially set opacity on thumbs and add
-		// 	// additional styling for hover effect on thumbs
-		// 	var onMouseOutOpacity = 0.5;
-		// 	$('#thumbs ul.thumbs li span').opacityrollover({
-		// 		mouseOutOpacity:   onMouseOutOpacity,
-		// 		mouseOverOpacity:  0.0,
-		// 		fadeSpeed:         'fast',
-		// 		exemptionSelector: '.selected'
-		// 	});
-			
-		// 	// Initialize Advanced Galleriffic Gallery
-		// 	var gallery = $('#thumbs').galleriffic({
-		// 		delay:                     7000,
-		// 		numThumbs:                 12,
-		// 		preloadAhead:              6,
-		// 		enableTopPager:            false,
-		// 		enableBottomPager:         false,
-		// 		imageContainerSel:         '#slideshow',
-		// 		controlsContainerSel:      '',
-		// 		captionContainerSel:       '',
-		// 		loadingContainerSel:       '',
-		// 		renderSSControls:          true,
-		// 		renderNavControls:         true,
-		// 		playLinkText:              'Play Slideshow',
-		// 		pauseLinkText:             'Pause Slideshow',
-		// 		prevLinkText:              'Prev',
-		// 		nextLinkText:              'Next',
-		// 		nextPageLinkText:          'Next',
-		// 		prevPageLinkText:          'Prev',
-		// 		enableHistory:             true,
-		// 		autoStart:                 7000,
-		// 		syncTransitions:           true,
-		// 		defaultTransitionDuration: 900,
-		// 		onSlideChange:             function(prevIndex, nextIndex) {
-		// 			// 'this' refers to the gallery, which is an extension of $('#thumbs')
-		// 			this.find('ul.thumbs li span')
-		// 				.css({opacity:0.5})
-		// 		},
-		// 		onPageTransitionOut:       function(callback) {
-		// 			this.find('ul.thumbs li span').css({display:'block'});
-		// 		},
-		// 		onPageTransitionIn:        function() {
-		// 			this.find('ul.thumbs li span').css({display:'none'});
-		// 		}
-		// 	});
-		// });
-        $("li2009").click(function(){
-            alert("aaa");
-        })
+			// Initially set opacity on thumbs and add
+			// additional styling for hover effect on thumbs
+			var onMouseOutOpacity = 0.5;
+			$('#thumbs ul.thumbs li span').opacityrollover({
+				mouseOutOpacity:   onMouseOutOpacity,
+				mouseOverOpacity:  0.0,
+				fadeSpeed:         'fast',
+				exemptionSelector: '.selected'
+			});
+		});
+        function addLoadEvent(func)
+        {
+            var oldonload=window.onload;
+            if(typeof window.onload != "function")
+            {
+                window.onload=func;
+            }
+            else
+            {
+                window.onload= function()
+                {
+                    oldonload();
+                    func();
+                }
+            }
+        }
+        function insertAfter(newElement, targetElement)
+        {
+            var parent = targetElement.parentNode;
+            if(parent.lastChild==targetElement)
+            {
+                parent.appendChild(newElement);
+            }
+            else{
+                parent.insertBefore(newElement,targetElement.nextSibling);
+            }
 
+        }
+        function preparePlaceholder()
+        {
+            //alert("aaaaa");
+            if(!document.createElement) return false;
+            if(!document.createTextNode) return false;
+            if(!document.getElementById) return false;
+            if(!document.getElementById("slideshow")) return false;
+            //alert("aaaaa");
+            var placeholder=document.createElement("img");
+            //alert("aaaaa");
+            placeholder.setAttribute("id","placeholder");
+            placeholder.setAttribute("src","images/gallery-img1.jpg");
+            placeholder.setAttribute("alt","my img gallery");
+            var gallery=document.getElementById("slideshow");
+            insertAfter(placeholder,gallery);
+        }
+        function prepareGallery() {
+            if(!document.getElementsByTagName) return false;
+            if(!document.getElementById) return false;
+            if(!document.getElementById("thumbs")) return false;
+            var gallery=document.getElementById("thumbs");
+            var links=gallery.getElementsByTagName('a');
+            for(var i=0;i<links.length;i++)
+            {
+                links[i].onclick=function()
+                {
+                    return showPic(this) ? false : true;
+                }
+            }
+
+        }
+        function showPic(whicpic)
+        {
+            if(!document.getElementById("slideshow")) return false;
+            var source = whicpic.getAttribute('href');
+            var placeholder = document.getElementById('placeholder');
+            placeholder.setAttribute("src",source);
+            return true;
+        }
+        var temp = document.getElementById('carousel');
+        var lis = temp.getElementsByTagName('li');
+        var discription={'project2009': '桂林大正温泉假日酒店，建筑面积近四万平方米，是桂林市内首家五星级温泉酒店，地处桂林市中心地段，毗邻南溪山景区、黑山植物园、联达商业广场，距机场仅40分钟车程，汽车站、火车站近在咫尺，地理环境优越。酒店独有的温泉景区，天然温泉水质晶莹剔透，水温常年保持35℃以上、四级花枝摇曳、绿影婆娑，周边亭台、假山错落有致，予人以世外桃源之感。温泉水滑，褪去周身疲惫；放眼周边，叠翠山水入怀。惬意人生，夫复何求？1万平方米温泉景观区，中医理疗房20间，高级美容SPA房8间，500平方米的温泉游泳池，超大规模的温泉景观、至尊豪华的KTV娱乐城，为桂林的酒店业添加瑰丽的一笔。','project2011':'2011年开始施工，2013年开业，碧海阳光国际温泉常年保持52℃的水温，达到医疗矿泉水水质标准，含丰富的硫 酸纳、偏硅酸、钾、钙、锶等微量元素，PH值为8.7，可有效提高人体免疫力，对皮肤病有非常明显的疗效。温泉区室内面积2800平方米，室外面积达56000平方米，室内外共设有47个泡池，今后还会开工建设水上漂流区和水上游乐世界等项目。泉水源于地壳下2公里处的地幔层，出口温度达50摄氏度，内含多种对人体有益的偏硅酸、硫酸钠、钾、钠、硫、钙、锶等28种微量元素，泉水天然、纯净、绝美、神奇，似琼浆玉液，清澈如镜。沐浴其中，倍感舒爽，不但能美容保健，对关节炎、血液循环、神经系统、内分泌系统等多种慢性病症都具有显著缓解作用。温泉区游乐项目众多，设有SPA美体区、室内温泉游泳池、温泉海浪池、石板浴、六味养生汤、美肤亲亲鱼浴、保健按摩等二十多种不同项目，同时设有中药湿蒸房和矿石干蒸房。','project2015':'沈阳龙源温泉度假城2015年开始施工，2016年8月1日试营业。  位于拥有“温泉之都”美誉的河源断裂地带的中段，背靠由珍贵的水晶石构成的“水晶山”，温泉水从地下100多米深处透过古老的水晶岩层涌出，水质更具灵性，富含40多种矿物质，硅酸、锂、锶、锌、二氧化碳等珍贵地热矿泉水。龙源温泉度假城拥有13 个纯天然泉眼，勘测日流量近万吨，温泉水资源十分丰富，最高温度68℃，具有良好的增强免疫力，活化细胞，养颜瘦身等保健疗效。龙源温泉度假城占地逾千亩，是按国家4A级旅游景观区标准精心打造的千亩级温泉体验式休闲度假大城。共分三期开发，一期为温泉酒店区，二期水晶山别墅、三期香溪谷别墅。温泉区位于整个度假城的中部，建筑面积逾20万平米，以“世界沐浴文化”为主题，规划为中国区、日本区、欧洲区、印度馆、泰国馆、热带风情区等浴区，并配套有五星级酒店、商务会议厅、中餐厅、西餐厅、KTV、儿童水上乐园、生态游泳池等配套。其中五星级酒店、中国浴区、日本浴区、欧洲浴区、商务会议厅、中餐厅、西餐厅、KTV、游客接待中心等已投入使用，成功经营。二期水晶山别墅位于龙源温泉度假城北区，占地约18万㎡，北靠水晶山，南面香溪水，藏风纳水，荟萃山水精华，博采建筑众长。于天赐的山、湖、林、泉等珍稀自然资源版图上，随势精琢原生山体别墅、泛地中海风情园林。隐于此，事业与生活转换从容，生活境界从容升级。 千年水晶山蕴育 围而不合的群山，起伏连绵的坡岭原氧，涵养养心大境。龙源温泉度假城背靠的“火竻山”，山体主要由珍贵的水晶石构成，又名“水晶山”；而千年水晶山里，蕴含珍贵的水晶石，不经意间透露了山的珍贵与灵性。 私家温泉入户 青山似黛，是生活的锦绣屏障；泉水淙淙，是天然的琴箫歌音；水晶山别墅将原生矿物温泉引入私家庭院，足不出户尽享私密温汤之乐，蕴育主人内外兼修的涵养。'}
+        for(var i=0;i<lis.length;i++){
+            lis[i].onclick=function(){
+                // var myid = 'project'+this.getElementsByTagName('span')[0].innerHTML;
+                var year = this.getElementsByTagName('span')[0].innerHTML;
+                var id = 'project' + year;
+                var discript = discription[id];
+                var changedis=document.getElementById('discript');
+                changedis.getElementsByTagName('span')[0].innerHTML= year;
+                changedis.getElementsByTagName('div')[0].innerHTML = discript;
+            }
+        }
+        addLoadEvent(preparePlaceholder);
+        addLoadEvent(prepareGallery);
 	</script>
 </body>
 </html>
